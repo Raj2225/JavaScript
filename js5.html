@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bothopen()
+        {
+            document.getElementById("Eyecheck").src ="images/bothopen.jpeg" 
+        }
+        function leftclose()
+        {
+            document.getElementById("Eyecheck").src ="images/leftclose.jpeg"
+        }
+        function rightclose()
+        {
+           document.getElementById("Eyecheck").src ="images/rightclose.jpeg"
+        }
+        function bothclose() {
+            document.getElementById("Eyecheck").src ="images/bothclose.jpeg"
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>Dynamic Eye Check</h1>
+    <button onmouseover="bothopen()">Both Open</button>
+    <button onmouseover="leftclose()" >Left Close</button>
+    <button onmouseover="rightclose()">Right Close</button>
+    <button onmouseover="bothclose()">Both Close</button>
+    <br><br>
+    <img src="images/bothopen.jpeg" id="Eyecheck" alt="">
+</body>
+</html>
