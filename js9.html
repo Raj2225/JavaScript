@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(btn)
+        {
+            //alert(Math.floor(Math.random()*100))
+            var l= Math.floor(Math.random()*700);
+            var t= Math.floor(Math.random()*500);
+
+            btn.style.left=l+"px"
+            btn.style.top=t+"px"
+             var cnt = document.getElementById("mydiv").innerHTML
+             
+              if(cnt==-1)
+              {
+                alert("You loose try again!")
+                document.getElementById("mydiv").innerHTML = 10;
+                btn.style.left=0+"px"
+                btn.style.top=0+"px"
+              }
+              else {
+                cnt=cnt-1;
+              document.getElementById("mydiv").innerHTML = cnt;
+              }
+
+        }
+    </script>
+</head>
+<body>
+    <div id="mydiv" style="font-size: 50px;width: 100px;
+    height: 100px;background-color: greenyellow;
+    margin-top: 100px; text-align: center;
+    line-height:98px;border-radius: 60px;">10</div>
+    <input type="button" style="position: absolute;left: 0px;
+    top: 0px;
+    background-color: hotpink;color: white;" value="Catch me" 
+    onmouseover="change(this)">
+    
+</body>
+</html>
