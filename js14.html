@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change(disp)
+        {
+            var imgid=document.getElementById("mycoca")
+
+        if(disp=="show")
+        {
+            imgid.style.display="block"// block ==> show
+        }
+        else
+        {
+            imgid.style.display="none"// none ==> show
+        }
+        }
+    </script>
+</head>
+<body style="background-color: black;color: tomato;font-size: 30px;">
+    <h1>Want to see Advertisement?</h1>
+    <tr>
+        <td>
+            <input type="radio" id="yes" name="request" onclick="change('show')" checked>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="request" onclick="change('hide')">
+            <label for="no">No</label>
+
+            <br><br>
+            <img src="images/Coca-cola.jpeg" id="mycoca" style="height: 350px; width: 350px;">
+        </td>
+    </tr>
+</body>
+</html>
