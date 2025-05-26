@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changebk(currcolor)
+        {
+            document.body.style.backgroundColor = currcolor
+        }
+        function changebt(orgcolor)
+        {
+            document.body.style.backgroundColor = orgcolor
+        }
+    </script>
+    <style>
+        td{
+            border: 2px solid black;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: beige;" onmouseout="changebt('beige')">
+    <table style="border: 4px solid black;margin-left:auto;margin-right: auto;" cellspacing="10px" 
+    cellpadding="25px" >
+        <tr>
+            <td style="background-color: orangered;" onmouseover="changebk(this.style.backgroundColor)" >Red</td>
+            <td style="background-color: green" onmouseover="changebk(this.style.backgroundColor)" >Green</td>
+            <td style="background-color: violet;" onmouseover="changebk(this.style.backgroundColor)" >Violet</td>
+            <td style="background-color: blue;" onmouseover="changebk(this.style.backgroundColor)" >Blue</td>
+            <td style="background-color: yellow;" onmouseover="changebk(this.style.backgroundColor)">Yellow</td>
+        </tr>
+    </table>
+</body>
+</html>
