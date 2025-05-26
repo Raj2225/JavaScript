@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+            var a=document.getElementById("t1").value
+            var b=document.getElementById("t2").value
+            var result=parseInt(a)+parseInt(b)
+            //parse is used to convert string to integer
+           // alert("The addition of "+a+" and "+b+" is: "+result)
+           document.getElementById("mydiv").innerHTML=result
+        }
+        function sub()
+        {
+            var a=document.getElementById("t1").value
+            var b=document.getElementById("t2").value
+            var result=parseInt(a)-parseInt(b)
+            //parse is used to convert string to integer
+           // alert("The addition of "+a+" and "+b+" is: "+result)
+           document.getElementById("mydiv").innerHTML=result
+        }
+        function mul()
+        {
+            var a=document.getElementById("t1").value
+            var b=document.getElementById("t2").value
+            var result=parseInt(a)*parseInt(b)
+            //parse is used to convert string to integer
+           // alert("The addition of "+a+" and "+b+" is: "+result)
+           document.getElementById("mydiv").innerHTML=result
+        }
+        function div()
+        {
+            var a=document.getElementById("t1").value
+            var b=document.getElementById("t2").value
+            var result=parseInt(a)/parseInt(b)
+            //parse is used to convert string to integer
+           // alert("The addition of "+a+" and "+b+" is: "+result)
+           document.getElementById("mydiv").innerHTML=result
+        }
+    </script>
+</head>
+<body style="background-color: lightpink;">
+    First number:<input type="text" id="t1" placeholder="Enter first number" autofocus>
+    Second number:<input type="text" id="t2" placeholder="Enter second number">
+
+    
+    <input type="button" value="Add"
+    style="background-color: aqua;" onclick="add()">
+    <input type="button" value="Sub"
+    style="background-color: orangered;" onclick="sub()">
+    <input type="button" value="Mul"
+    style="background-color: lightskyblue;" onclick="mul()">
+    <input type="button" value="Div"
+    style="background-color: tan;" onclick="div()">
+    <br><br>
+    <div id="mydiv" style="color: rosybrown;font-size: 150px;"></div>
+    
+</body>
+</html>
